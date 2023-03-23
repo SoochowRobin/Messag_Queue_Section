@@ -15,3 +15,10 @@ This project just utilizes the property of streaming data processing of Kafka. A
 Producer side just configure the key-value serializer and topic name. Application extends **CommandLineRunner** interface to override run() method, and this method will be extected when the application start. <br>
 Consumer side just configure key-value deserializer and Datasource information. And user Listener annotation to listen to specific topic. <br>
 
+**Spring-Kafka-microservices**<br>
+This project build an RESTFul API to make one producer service and this service and put message get from requestbody into kafka message queue. And two consumer serivce stock service to stock these message into database and email service to send email notification. <br>
+
+
+
+
+
