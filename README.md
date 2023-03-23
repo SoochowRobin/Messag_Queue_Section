@@ -18,6 +18,9 @@ Consumer side just configure key-value deserializer and Datasource information. 
 **Spring-Kafka-microservices**<br>
 This project build an RESTFul API to make one producer service and this service and put message get from requestbody into kafka message queue. And two consumer serivce stock service to stock these message into database and email service to send email notification. <br>
 
+**Spring-rabbitmq-tutorial**<br>
+This project choose rabbitmq, a different MQ broker system from Kafka. And RabbitMQ default username and password are "guest" for its management console. And in configuration file, we need to create queue, and **exchange**. Exchange is a middle point of producer and queues. Therefore we need to bind exchange and queues with **routing_key**. And you just need to send your message to exchange with routing_key. Then exchange will take over the routing send message to corresponding queue. And other work is quite similar to Kafka like sending messages in producer and configuring listener in consumer.
+
 
 
 
