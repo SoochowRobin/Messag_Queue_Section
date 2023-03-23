@@ -10,4 +10,8 @@ Build producer and consumer in kafka folder, and we send message by using kafkat
 Consumer service should use Listener annotation to configure topic name to get message from MQ. <br>
 
 
+**Spring-Kafka-real-word-project**<br>
+This project just utilizes the property of streaming data processing of Kafka. And consumer side is continuously pull updated information from Wikimedia webpage and put them into Kafka message queue. And consumer subscribe to this topic and continuously pull message out and store these message into RDMS-MySQL. <br>
+Producer side just configure the key-value serializer and topic name. Application extends **CommandLineRunner** interface to override run() method, and this method will be extected when the application start. <br>
+Consumer side just configure key-value deserializer and Datasource information. And user Listener annotation to listen to specific topic. <br>
 
