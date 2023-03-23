@@ -1,0 +1,3 @@
+com/antra/springboot/entity/WikimediaData.class
+com/antra/springboot/SpringBootConsumerApplication.class
+com/antra/springboot/KafkaDatabaseConsumer.class
